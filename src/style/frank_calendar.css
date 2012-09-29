@@ -1,0 +1,95 @@
+/**
+* CSS Reset
+*/
+.frk-cal-wrap {
+	font:12px/20px Tahoma,Verdana,STHeiTi,simsun,sans-serif;
+	color: #333;
+	background-color:#FFF;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.frk-cal-wrap * {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.frk-cal-wrap ol {
+	list-style: none outside;
+}
+.frk-cal-wrap a {
+	color: #333;
+	text-decoration: none;
+}
+.frk-cal-wrap button {
+	cursor: pointer;
+}
+/**
+* Default Style
+*/
+.frk-cal-wrap {
+	width: 170px;
+	border-color: #CCC;
+	border-width: 1px 1px 0;
+	border-style: solid;
+	padding: 0;
+}
+.frk-cal-wrap button{
+	border: none;
+	width: 24px;
+	background-color: transparent;
+	vertical-align:middle;
+}
+.frk-cal-wrap span {
+	display: inline-block;
+	width: 48px;
+	vertical-align:middle;
+}
+.frk-cal-wrap ol{
+	width: 100%;
+}
+.frk-cal-wrap ol li {
+	float: left;
+	width: 22px;
+	border: 1px solid #FFF;
+}
+.frk-cal-wrap ol .date-prev,.frk-cal-wrap ol .date-next {
+	background-color: #eee;
+	border-color: #eee;
+}
+.frk-cal-wrap ol .date-hl {
+	background-color: yellow;
+	border-color: yellow;
+}
+.frk-cal-wrap .heading {
+	text-align: left;
+}
+.frk-cal-wrap .heading button:hover {
+	font-weight: 700
+}
+.frk-cal-wrap .calendar li{
+	cursor: pointer;
+}
+.frk-cal-wrap .calendar .date-now:hover{
+	border: 1px solid #DDD;
+}
+.frk-cal-wrap .calendar li a{
+	display: inline-block;
+	width:100%;
+	height: 100%;
+}
+.frk-cal-wrap .frk-cal-part {
+	border-bottom: 1px solid #CCC;
+	padding:1px 0 2px;
+	margin:0 1px;
+}
+.frk-cal-wrap .what-day {
+}
+
+
+.frk-clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+
+.frk-clearfix:before, .frk-clearfix:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0;}
+.frk-clearfix:after{clear:both;}
+
+.frk-clearfix{*zoom:1;}
