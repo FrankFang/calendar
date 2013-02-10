@@ -25,3 +25,8 @@ c.onDateSelected = function (year, month, date) {
     alert(year + '年' + month + '月' + date + '日');
 };
 ```
+
+## TODO
+
+1. API 丰富
+2. 样式自定义或多样式
