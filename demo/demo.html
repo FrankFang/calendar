@@ -1,39 +1,45 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title></title>
-<link rel="stylesheet" href="../src/style/frank_calendar.css" />
-<script type="text/javascript" src="../src/script/frank_calendar.js"></script>
-<style type="text/css">
-* {
-	padding: 0;
-	margin: 0;
-}
-.wrap {
-	position:relative;
-	width: 1000px;
-	height: 400px;
-	background:#ddd;
-	padding: 30px;
-	margin: 0 auto;
-}
-.cal {
-	width: 0;
-}
-</style>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../src/css/calendar.css"/>
+    <script type="text/javascript" src="../src/js/calendar.js"></script>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            background: #ddd;
+            padding: 30px;
+            margin: 0 auto;
+        }
+
+        .cal {
+            width: 0;
+        }
+    </style>
 </head>
 <body>
-	<div class="wrap">
-		<button id="show">显示</button>
-		<button id="hide">隐藏</button>
-		<div id="c" class="cal">2</div>
-	</div>
-	<script type="text/javascript">
-	var c = new FrankCalendar('c');
-	c.hide();
-	frankGet('show').onclick = function(){c.show();};
-	frankGet('hide').onclick = function(){c.hide();};
-	</script>
+<div class="wrap">
+    <button id="show">显示</button>
+    <button id="hide">隐藏</button>
+    <div id="c" class="cal">2</div>
+</div>
+<script type="text/javascript">
+    var c = new Calendar('c');
+    c.hide();
+    document.getElementById('show').onclick = function () {
+        c.show();
+    };
+    document.getElementById('hide').onclick = function () {
+        c.hide();
+    };
+</script>
 </body>
 </html>
