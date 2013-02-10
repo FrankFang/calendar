@@ -151,7 +151,7 @@
             var eventTarget = event.srcElement || event.target;
             if (eventTarget.nodeName.toUpperCase() == 'LI') {
                 if (eventTarget.className == "date-now") {
-                    that.onDateSelected(eventTarget);
+                    that.onDateSelected(that.currentYear, that.currentMonth, eventTarget.firstChild.nodeValue || eventTarget.innerText);
                 } else if (eventTarget.className == "date-next") {
                     that._fillDate(that.currentYear, that.currentMonth + 1, that.currentDate);
                 } else if (eventTarget.className == "date-prev") {
@@ -159,7 +159,6 @@
                 }
 
             }
-            ;
         };
         //结束 绑定每日的onMouseover和onMouseout和onClick事件
 
@@ -229,8 +228,7 @@
     Calendar.prototype.hide = function () {
         this._container.style.visibility = 'hidden';
     };
-    Calendar.prototype.onDateSelected = function (obj) {
-        alert(Calendar.i18n[this.config.lang].DATEFORMAT.replace('%yyyy%', this.currentYear).replace('%M%', Calendar.i18n[this.config.lang].MONTHS[this.currentMonth - 1]).replace('%d%', obj.firstChild.nodeValue || obj.innerText));
+    Calendar.prototype.onDateSelected = function (_year, _month, _date) {
     };
 
     Calendar.errorMassage = [

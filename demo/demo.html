@@ -40,6 +40,10 @@
     document.getElementById('hide').onclick = function () {
         c.hide();
     };
+    c.onDateSelected = function (year, month, date) {
+        alert(year + '年' + month + '月' + date + '日');
+    };
+
 </script>
 </body>
 </html>
