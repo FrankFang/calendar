@@ -30,3 +30,5 @@ c.onDateSelected = function (year, month, date) {
 
 1. API 丰富
 2. 样式自定义或多样式
+
+

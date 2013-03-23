@@ -18,9 +18,9 @@
 
     function Calendar(id) {
         this.config = {
-            'mode':"",
-            'lang':"zh-CN",
-            'debug':false
+            'mode': "",
+            'lang': "zh-CN",
+            'debug': false
         };
         this._container = null;
         this._errorTip = "";
@@ -236,31 +236,31 @@
     ];
     Calendar.DAYOFMONTH = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     Calendar.i18n = {
-        'zh-CN':{
-            'DAYOFWEEK':['日', '一', '二', '三', '四', '五', '六'],
-            'FULLDAYOFWEEK':['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
-            'MONTHS':['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-            'DATEFORMAT':'%yyyy%年%M%月%d%日',
-            'DEFAULTTIP':'请点击数字选择日期',
-            'PREVMONTH':'上个月',
-            'PREVYEAR':'上一年',
-            'NEXTMONTH':'下个月',
-            'NEXTYEAR':'下一年',
-            'CLOSE':'关闭',
-            'TODAY':'今天'
+        'zh-CN': {
+            'DAYOFWEEK': ['日', '一', '二', '三', '四', '五', '六'],
+            'FULLDAYOFWEEK': ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
+            'MONTHS': ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+            'DATEFORMAT': '%yyyy%年%M%月%d%日',
+            'DEFAULTTIP': '请点击数字选择日期',
+            'PREVMONTH': '上个月',
+            'PREVYEAR': '上一年',
+            'NEXTMONTH': '下个月',
+            'NEXTYEAR': '下一年',
+            'CLOSE': '关闭',
+            'TODAY': '今天'
         },
-        'en-US':{
-            'DAYOFWEEK':['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-            'FULLDAYOFWEEK':['Sunday', 'Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday'],
-            'MONTHS':['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            'DATEFORMAT':'%M% %d% %yyyy%',
-            'DEFAULTTIP':'Click a number to pick a date',
-            'PREVMONTH':'last month',
-            'PREVYEAR':'last year',
-            'NEXTMONTH':'next month',
-            'NEXTYEAR':'next year',
-            'CLOSE':'close',
-            'TODAY':'today'
+        'en-US': {
+            'DAYOFWEEK': ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+            'FULLDAYOFWEEK': ['Sunday', 'Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday'],
+            'MONTHS': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            'DATEFORMAT': '%M% %d% %yyyy%',
+            'DEFAULTTIP': 'Click a number to pick a date',
+            'PREVMONTH': 'last month',
+            'PREVYEAR': 'last year',
+            'NEXTMONTH': 'next month',
+            'NEXTYEAR': 'next year',
+            'CLOSE': 'close',
+            'TODAY': 'today'
         }
     };
     /**
